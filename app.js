@@ -21,5 +21,7 @@ quotes = [
   {text: "If you fell down yesterday, stand up today.",
   author: "H.G. Wells"},
   {text: "Always work hard. Intensity clarifies. It creates not only momentum, but also the pressure you need to feel either friction, or fulfillment.",
-  author: "Marcus Buckingham"}
+  author: "Marcus Buckingham"},
+  {text: "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+  author: "Joshua J. Marine"}
 ]
