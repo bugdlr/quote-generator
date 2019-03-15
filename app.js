@@ -15,7 +15,17 @@ const allQuotes = [
   new Quote('Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.', "Dale Carnegie"),
   new Quote('Do not wait to strike till the iron is hot; but make it hot by striking', "William B. Sprague"),
   new Quote('Do you want to know who you are? Don\'t ask. Act! Action will delineate and define you.', "Thomas Jefferson"),
-  new Quote('Do your work with you whole heart, and you will succeed--there\'s so little competition.', "Elbert Hubbard")
+  new Quote('Do your work with you whole heart, and you will succeed--there\'s so little competition.', "Elbert Hubbard"),
+  new Quote('Don\'t let what you cannot do interfere with what you can do.', "John R. Wooden"),
+  new Quote('Enthusiasm is the engergy and force that builds literal momentum of the human soul and mind.', "Bryant H. McGill"),
+  new Quote('Fortune favors the brave.', "Publius Terence"),
+  new Quote('I find that the harder I work, the more luck I seem to have.', "Thomas Jefferson"),
+  new Quote('Happiness is not something ready made. It comes from your own actions.', "Dalai Lama"),
+  new Quote('First say to yourself what you would be: and then do what you have to do.', "Epictetus"),
+  new Quote('If you do what you always did, you will get what you always gotten.', "Tony Robbins"),
+  new Quote('If you have the guts to keep making mistakes, your wisdom and intelligence leap forward with huge momentum.', "Holly Near"),
+  new Quote('A year from now you may wish you had started today.', "Karen Lamb"),
+  new Quote('One part at a time, one day at a time, we can accomplish any goal we set for ourselves.', "Karen Casey")
 ]
 
 // generate random number used to get quotes and colors
@@ -30,7 +40,7 @@ function getNewQuote() {
     // display quote
     document.getElementById("text").textContent = `"${newQuote.text}"`;
     // display author
-    document.getElementById("author").textContent = `--${newQuote.author}`;
+    document.getElementById("author").textContent = `-${newQuote.author}`;
     // set up tweet
     let tweetQuote = newQuote.text.split(' ').join('%20');
     let tweetAuthor = newQuote.author.split(' ').join('%20');
@@ -44,7 +54,7 @@ function getNewQuote() {
     getNewQuote();
   }
   return lastQuote = newQuote;
-}
+};
 
 // color generator
 const colors = ['#92B558', '#DC4C46', '#672e3b', '#c48f65', '#223a5e', '#898e8c', '#005960', '#9c9a40', '#4F84C4', '#578CA9', '#004b8d', '#ce3175', '#5a7247', '#cfb095', '#95dee3'];
