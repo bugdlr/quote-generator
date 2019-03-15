@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Quote Generator</title>
   </head>
   <body>
@@ -11,9 +14,10 @@
       <p id="author"></p>
       <div class="buttons">
         <button id="new-quote">New Quote</button>
-        <button id="tweet-quote">Tweet Quote</button>
+        <a id="tweet-quote" href="" target="_blank">Tweet<i class="fab fa-twitter"></i></a>
       </div>
     </div>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
   <script type="text/javascript" src="app.js"></script>
 </html>
