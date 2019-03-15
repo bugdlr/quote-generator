@@ -15,7 +15,7 @@ const allQuotes = [
   new Quote('Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.', "Dale Carnegie"),
   new Quote('Do not wait to strike till the iron is hot; but make it hot by striking', "William B. Sprague"),
   new Quote('Do you want to know who you are? Don\'t ask. Act! Action will delineate and define you.', "Thomas Jefferson"),
-  new Quote('Do your work with you whole heart, and you will succed--there\'s so little competition.', "Elbert Hubbard")
+  new Quote('Do your work with you whole heart, and you will succeed--there\'s so little competition.', "Elbert Hubbard")
 ]
 
 // generate random number used to get quotes and colors
