@@ -46,21 +46,23 @@ function getNewQuote() {
     let tweetAuthor = newQuote.author.split(' ').join('%20');
     tweetQuote = 'https://twitter.com/intent/tweet?text=' + '"' + tweetQuote + '"' + ' --' + tweetAuthor;
     document.getElementById('tweet-quote').setAttribute('href', tweetQuote);
-    // change colors
-    getNewColors();
   } else {
     // if the quote is the same, try again
     newQuote = allQuotes[random(allQuotes)];
     getNewQuote();
   }
+  // change colors
+  getNewColors();
   return lastQuote = newQuote;
 };
 
 // color generator
 const colors = ['#92B558', '#DC4C46', '#672e3b', '#c48f65', '#223a5e', '#898e8c', '#005960', '#9c9a40', '#4F84C4', '#578CA9', '#004b8d', '#ce3175', '#5a7247', '#cfb095', '#95dee3'];
 
+let currentColor;
+
 function getNewColors() {
-  let currentColor, newColor;
+  let newColor;
   newColor = random(colors);
   // if it's a different color (so that you don't get the same color in a row)
   if (newColor !== currentColor) {
@@ -69,9 +71,9 @@ function getNewColors() {
     document.getElementById('new-quote').style.backgroundColor = colors[newColor];
     document.getElementById('tweet-quote').style.backgroundColor = colors[newColor];
   } else {
-    newColor = random(colors);
+    getNewColors();
   }
-  currentColor = newColor;
+  return currentColor = newColor;
 };
 
 getNewQuote();
