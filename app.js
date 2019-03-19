@@ -57,13 +57,14 @@ function getNewQuote() {
 };
 
 // color generator
-const colors = ['#92B558', '#DC4C46', '#672e3b', '#c48f65', '#223a5e', '#898e8c', '#005960', '#9c9a40', '#4F84C4', '#578CA9', '#004b8d', '#ce3175', '#5a7247', '#cfb095', '#95dee3'];
+const colors = ['#92B558', '#DC4C46', '#672e3b', '#c48f65', '#223a5e', '#005960', '#9c9a40', '#4F84C4', '#578CA9', '#004b8d', '#ce3175', '#5a7247', '#a07753', '#5da8ad'];
 
 let currentColor;
 
 function getNewColors() {
   let newColor;
   newColor = random(colors);
+  console.log(newColor);
   // if it's a different color (so that you don't get the same color in a row)
   if (newColor !== currentColor) {
     // change the colors
